@@ -1,0 +1,28 @@
+{
+	"name": "datastar-electron",
+	"version": "1.0.0",
+	"description": "Datastar in Electron - no more IPC",
+	"keywords": [
+		"datastar",
+		"electron",
+		"server-sent-events",
+		"sse",
+		"ssr"
+	],
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {
+		"fmt": "bunx oxfmt",
+		"lint": "bunx oxlint",
+		"example": "bunx electron examples/demo.ts"
+	},
+	"dependencies": {
+		"@starfederation/datastar-sdk": "^1.0.0"
+	},
+	"devDependencies": {
+		"electron": "^42.1.0"
+	}
+}
