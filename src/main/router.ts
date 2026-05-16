@@ -1,7 +1,7 @@
 import type { Protocol } from "electron";
 import { protocol as electronProtocol, app } from "electron";
 
-import type { RouterOptions, RouteHandler } from "./types.ts";
+import type { RouterOptions, RouteHandler } from "./types.js";
 
 export class Router {
 	private options: RouterOptions;

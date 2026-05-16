@@ -12,9 +12,15 @@
 	"license": "MIT",
 	"type": "module",
 	"exports": {
-		".": "./src/index.ts"
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
 	},
 	"scripts": {
+		"build": "tsgo",
+		"prepublishOnly": "bun run build",
+		"clean": "rm -rf dist",
 		"fmt": "bunx oxfmt",
 		"lint": "bunx oxlint",
 		"example": "bunx electron examples/demo.ts"
@@ -22,7 +28,9 @@
 	"dependencies": {
 		"@starfederation/datastar-sdk": "^1.0.0"
 	},
+	"files": ["dist"],
 	"devDependencies": {
+		"@typescript/native-preview": "^7.0.0-dev.20260514.1",
 		"electron": "^42.1.0"
 	}
 }
