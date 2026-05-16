@@ -23,9 +23,9 @@ Datastar patches signals into DOM      ← Browser updates reactively
 ## Install
 
 ```bash
-bun i github:hyperpuncher/datastar-electron
-pnpm i github:hyperpuncher/datastar-electron
-# or: copy src/ into your project + install @starfederation/datastar-sdk
+npm i datastar-electron
+pnpm i datastar-electron
+bun i datastar-electron
 ```
 
 ## Quick start
